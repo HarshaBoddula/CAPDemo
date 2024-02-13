@@ -1,0 +1,39 @@
+Under srv folder create a folder test , under that create a file requests.http.
+Write below commands and payload
+
+###
+Get http://localhost:4004/odata/v4/catalog1
+
+###
+Get http://localhost:4004/odata/v4/catalog1/SalesOrders(1)
+
+###
+POST http://localhost:4004/odata/v4/catalog1/SalesOrders HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Order4",
+    "customerNo": "C1"
+}
+
+###
+POST http://localhost:4004/catalog/Catalog1Service/SalesOrderItems HTTP/1.1
+Content-Type: application/json
+
+{
+  "salesOrder_ID": 1,
+  "item": 10,
+  "material": "Pen",
+  "quantity": 100
+}
+
+###
+POST http://localhost:4004/SalesOrderService1/SalesOrderItems HTTP/1.1
+Content-Type: application/json
+
+{
+  "salesOrder_ID": 1,
+  "item": 11,
+  "material": "Pen",
+  "quantity": 200
+}

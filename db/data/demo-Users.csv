@@ -1,0 +1,6 @@
+id;name;email;phone;gender
+1000;user1;user1@test.com;123456;female
+2000;user2;user2@test.com;9856748;female
+3000;user3;user3@test.com;9856748;male
+4000;user4;user4@test.com;9856748;female
+5000;user5;user5@test.com;9856748;male

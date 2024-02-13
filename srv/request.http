@@ -1,0 +1,37 @@
+GET http://localhost:4004/odata/v4/catalog/$metadata
+
+###
+GET http://localhost:4004/odata/v4/catalog/Books
+
+
+###
+POST http://localhost:4004/odata/v4/catalog/Books HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID": 3,
+    "title": "White Tiger",
+    "stock": 586
+}
+
+###
+PUT http://localhost:4004/odata/v4/catalog/Books(3) HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "White Tiger",
+    "stock": 600
+}
+
+###
+DELETE http://localhost:4004/odata/v4/catalog/Books(3) HTTP/1.1
+Content-Type: application/json
+
+###
+PATCH http://localhost:4004/odata/v4/catalog/Books(3) HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "White Tiger",
+    "stock": 600
+}

@@ -1,0 +1,4 @@
+id;name;contact_homepage;contact_email;contact_address_city;contact_address_street;contact_address_streetNumber;company
+1000;Cust1;www.cust1.com;cust1@test.com;city1;street1;1000;company1
+2000;Cust2;www.cust2.com;cust2@test.com;city2;street2;2000;company2
+3000;Cust3;www.cust3.com;cust3@test.com;city3;street3;3000;company3

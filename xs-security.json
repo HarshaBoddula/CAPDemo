@@ -1,0 +1,66 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.SalesOrderViewer",
+      "description": "SalesOrderViewer"
+    },
+    {
+      "name": "$XSAPPNAME.SalesOrderAdmin",
+      "description": "SalesOrderAdmin"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "BookID",
+      "description": "BookID",
+      "valueType": "s",
+      "valueRequired": false
+    },
+    {
+      "name": "SalesOrgAttribute",
+      "description": "SalesOrgAttribute",
+      "valueType": "s",
+      "valueRequired": false
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.Viewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "SalesOrderViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.SalesOrderViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "SalesOrderAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.SalesOrderAdmin"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "userattributes",
+      "description": "generated",
+      "default-role-name": "Attributes of a User",
+      "scope-references": [],
+      "attribute-references": [
+        "BookID",
+        "SalesOrgAttribute"
+      ]
+    }
+  ]
+}
